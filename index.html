@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale-1.0">
-		<title>CLICK CLICK</title>
-		<link rel= "stylesheet" href="style.css">
-	</head>
-<body>
-	<div class=content>
-		<video autoplay loop muted plays-inline class="back-video">
-			<source src="namjoon.mp4" type="video/mp4">
-		</video>
-		<h1>KIM NAMJOON</h1>
-        <div class="container">
-            <button type="submit" class="btn">View more</button>
-        </div>
-	</div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CLICK CLICK</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="content"> 
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="/assets/namjoon.mp4" type="video/mp4">
+      </video>
+    <section class="modal hidden">
+      <div class="flex">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbVtD6jDUGL6iMw5rsggcsHLLSXMYzYvNk_8Y9A27wkFd3ILI5"
+          width="50px"
+          height="50px"
+          alt="user"
+        />
+        <button class="btn-close">⨉</button>
+      </div>
+      <!--MODAL WHERE YOU CAN ADD INFORMATION-->
+      <div>
+        <h3>KIM NAMJOON</h3>
+        <p>
+          Kim Nam-joon, known professionally as RM, is a South Korean rapper, songwriter, and record producer. He is the leader of South Korean boy band BTS. RM released his first solo mixtape, RM, in 2015, followed by his second mixtape, Mono, in 2018. Later in 2022, he released his Solo debut Studio Album called Indigo which was a hit. The album peaked at number three on the Billboard 200, becoming the highest-charting album by a Korean soloist of all-time. </p>
+          <p><b> Now in 2024 he is intoducing his 2nd solo album called Right Place Wrong Person; a 11 track album! you are requested to tune in to his artwork!! Its releasing on 24th May 2024. The track "Come back to me" from his album is releasing on 10th May 2024
+        </p>
+      </div>
+      <a class="link" href="https://open.spotify.com/intl-es/artist/2auC28zjQyVTsiZKNgPRGs" target="_blank">SPOTIFY</a>
+    </section>
+
+    <div class="overlay hidden"></div>
+    <button class="btn btn-open">KIM NAMJOON</button>
+    <!--THIS SCRIPT CONTECTS THE MODAL WITH JAVASCRIPT CODE-->
+    <script src="./script.js"></script>
+  </div>
+  </body>
 </html>
